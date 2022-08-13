@@ -5,12 +5,14 @@ font_set = ("Courel", 12, "bold")
 DICE_ART = ['\u2680', '\u2681', '\u2682', '\u2683', '\u2684', '\u2685']
 BG="#DADDDF"
 
+# Rolling Dice
 def roll():
     dice1_art = random.choice(DICE_ART)
     dice2_art = random.choice(DICE_ART)
     dice1.config(text=dice1_art)
     dice2.config(text=dice2_art)
 
+# Window Settings
 window = Tk()
 window.title("Dice Rolling Simulator")
 window.config(padx=10, pady=10, bg=BG)
